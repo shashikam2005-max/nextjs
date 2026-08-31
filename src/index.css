@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.01em;
+    background-color: #241843;
+    color: #1E1238;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -0.02em;
+    color: #1A0F33;
+  }
+
+  .font-editorial {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Bespoke Light Twilight Atelier Glassmorphism & Pastel Dawn Panels */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(185, 155, 230, 0.35);
+  box-shadow: 0 16px 36px -12px rgba(110, 75, 165, 0.15), 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.glass-panel-subtle {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(190, 165, 230, 0.25);
+}
+
+.glass-panel-active {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 2px solid #F59E0B;
+  box-shadow: 0 0 28px -4px rgba(245, 158, 11, 0.35), 0 14px 32px rgba(120, 80, 180, 0.16);
+}
+
+.glass-btn-pill {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(180, 150, 220, 0.38);
+  color: #2E1B4E;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-btn-pill:hover {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(217, 119, 6, 0.55);
+  color: #190E2E;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(130, 90, 180, 0.14);
+}
+
+.glass-btn-active {
+  background: #F59E0B !important;
+  color: #130B24 !important;
+  font-weight: 700 !important;
+  border-color: #D97706 !important;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.4) !important;
+}
+
+.gold-action-btn {
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #D97706 100%);
+  color: #0F081C;
+  font-weight: 700;
+  box-shadow: 0 8px 24px -4px rgba(245, 158, 11, 0.42), 0 2px 8px rgba(217, 119, 6, 0.3);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-action-btn:hover {
+  background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 50%, #B45309 100%);
+  box-shadow: 0 12px 28px -2px rgba(245, 158, 11, 0.55), 0 0 20px rgba(251, 191, 36, 0.35);
+  transform: translateY(-1.5px);
+}
+
+.gold-action-btn:active {
+  transform: translateY(0.5px);
+}
+
+.twilight-glow {
+  box-shadow: 0 0 35px -8px rgba(168, 85, 247, 0.25);
+}
+
+.twilight-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 244, 255, 0.95) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(190, 160, 230, 0.32);
+  box-shadow: 0 12px 30px -8px rgba(110, 75, 165, 0.12);
+}
+
+/* Custom Skin Slider with Optical Precision for Light Twilight */
+input[type=range].skin-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(to right, #FDE6C8 0%, #E2B889 30%, #B87B4C 60%, #754426 85%, #3D1F13 100%);
+  height: 24px;
+  border-radius: 9999px;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(120, 80, 170, 0.15);
+}
+
+input[type=range].skin-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 3.5px solid #F59E0B;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 12px rgba(245, 158, 11, 0.5);
+  transition: transform 0.15s ease;
+}
+
+input[type=range].skin-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.12);
+}
+

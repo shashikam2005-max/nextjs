@@ -1,0 +1,6 @@
+{
+  "name": "StyleCue",
+  "description": "Smart AI Stylist & Interactive Fashion Kiosk for curated outfit bundles, color matching, and digital fitting cabin requests.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
